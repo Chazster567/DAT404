@@ -1,5 +1,7 @@
 body{
   font-family: 'Roboto', sans-serif;
+  background-color: #ffe4c7;
+  background-image: url(https://www.transparenttextures.com/patterns/diamond-upholstery.png);
 }
 
 h1, h2, h3, h4, h5, h6{
@@ -21,4 +23,8 @@ footer{
 
 .btn-primary{
   background-color: #bada55;
+}
+
+.titlemain{
+  text-align: center;
 }

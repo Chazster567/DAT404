@@ -1,15 +1,15 @@
 const navBrand = document.querySelector('.navbar-brand');
-navBrand.addEventListener('mouseenter', addBounce);
-navBrand.addEventListener('animationend', removeBounce);
+navBrand.addEventListener('mouseenter', addPulse);
+navBrand.addEventListener('animationend', removePulse);
 
 const navLinks = document.querySelectorAll('.nav-link');
-navLinks.forEach(navLink => navLink.addEventListener('mouseenter', addBounce));
-navLinks.forEach(navLink => navLink.addEventListener('animationend', removeBounce));
+navLinks.forEach(navLink => navLink.addEventListener('mouseenter', addPulse));
+navLinks.forEach(navLink => navLink.addEventListener('animationend', removePulse));
 
-function addBounce(e){
-  this.classList.add('animated', 'bounce');
+function addPulse(e){
+  this.classList.add('animated', 'pulse');
 }
 
-function removeBounce(e){
-  this.classList.remove('animated', 'bounce');
+function removePulse(e){
+  this.classList.remove('animated', 'pulse');
 }
