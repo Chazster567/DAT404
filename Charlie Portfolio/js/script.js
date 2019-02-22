@@ -1,9 +1,15 @@
-window.onload = function() {
-  currentYear();
-};
+const navBrand = document.querySelector('.navbar-brand');
+navBrand.addEventListener('mouseenter', addBounce);
+navBrand.addEventListener('animationend', removeBounce);
 
-function currentYear(){
-  const date = new Date();
-  const autoDate = document.querySelector('#autoDate');
-  autoDate.textContent = date.getFullYear();
-};
+const navLinks = document.querySelectorAll('.nav-link');
+navLinks.forEach(navLink => navLink.addEventListener('mouseenter', addBounce));
+navLinks.forEach(navLink => navLink.addEventListener('animationend', removeBounce));
+
+function addBounce(e){
+  this.classList.add('animated', 'bounce');
+}
+
+function removeBounce(e){
+  this.classList.remove('animated', 'bounce');
+}
