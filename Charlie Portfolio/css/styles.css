@@ -30,7 +30,7 @@ footer{
   position: absolute;
   text-align: center;
   left: 50%;
-  top: 50%;
+  top: 55%;
   margin-right: -50%;
   transform: translate(-50%, -50%);
 }
@@ -41,4 +41,8 @@ footer{
 
 .wait2 {
   animation-delay: 1s;
+}
+
+.place {
+  margin-top: 50%;
 }
